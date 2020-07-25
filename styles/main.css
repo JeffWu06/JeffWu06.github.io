@@ -1,0 +1,51 @@
+/*
+Name: Jeff Wu
+Date created: 7/15/19
+Most recent revision: 7/24/20
+*/
+
+/* body
+{
+   background-color: #FBFBFF
+} */
+
+li a.nav-link
+{
+  text-align: center;
+  margin: 10px;
+  color: #0A0A0A;
+  display: block
+  font-size: 125%
+}
+
+li.nav-item
+{
+   font-size: 120%;
+   text-decoration: none;
+}
+
+li a.nav-link:hover
+{
+  color: #BC2410;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+li a.nav-link:active
+{
+  font-weight: bold;
+  text-decoration:none;
+}
+
+.index-content{
+   text-align: center;
+   margin-top: 2rem;
+}
+
+footer {
+   text-align: center;
+   margin-top: 6rem;
+   border-top: solid;
+   border-width:thin;
+   font-size: 85%;
+}
