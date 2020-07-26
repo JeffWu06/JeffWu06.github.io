@@ -9,7 +9,7 @@ Most recent revision: 7/24/20
    background-color: #FBFBFF
 } */
 
-li a.nav-link
+/* li a.nav-link
 {
   text-align: center;
   margin: 10px;
@@ -35,6 +35,12 @@ li a.nav-link:active
 {
   font-weight: bold;
   text-decoration:none;
+} */
+
+header {
+   color: #0A0A0A;
+   text-align: center;
+   margin-top: 2rem;
 }
 
 .index-content{
@@ -42,10 +48,42 @@ li a.nav-link:active
    margin-top: 2rem;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #0A0A0A;
+}
+
+.topnav a {
+  float: left;
+  color: #FAFAFA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #BC2410;
+  color: #0A0A0A;
+  font-weight: bold;
+}
+
+.topnav a.active {
+  background-color: #BC2410;
+  color: #0A0A0A;
+  font-weight: bold;
+}
+
+.topnav-right {
+  float: right;
+}
+
+i {
+   color: #FAFAFA;
+}
+
 footer {
    text-align: center;
-   margin-top: 6rem;
-   border-top: solid;
-   border-width:thin;
    font-size: 85%;
+   width: 100%;
 }
