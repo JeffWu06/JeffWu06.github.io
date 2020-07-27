@@ -4,39 +4,6 @@ Date created: 7/15/19
 Most recent revision: 7/24/20
 */
 
-/* body
-{
-   background-color: #FBFBFF
-} */
-
-/* li a.nav-link
-{
-  text-align: center;
-  margin: 10px;
-  color: #0A0A0A;
-  display: block
-  font-size: 125%
-}
-
-li.nav-item
-{
-   font-size: 120%;
-   text-decoration: none;
-}
-
-li a.nav-link:hover
-{
-  color: #BC2410;
-  text-decoration: underline;
-  font-style: normal;
-}
-
-li a.nav-link:active
-{
-  font-weight: bold;
-  text-decoration:none;
-} */
-
 header {
    color: #0A0A0A;
    text-align: center;
@@ -45,21 +12,28 @@ header {
 
 .index-content{
    text-align: center;
-   margin-top: 2rem;
+   margin: 2rem 0rem 2rem 0rem;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #0A0A0A;
+.topnav{
+   align: center;
+   overflow: hidden;
+   background-color: #0A0A0A;
+   padding: 14px 16px 14px 0px;
+   font-size: 0;
 }
 
-.topnav a {
-  float: left;
+.bottomnav {
+   padding: 8px;
+}
+
+.topnav a, .bottomnav a {
+  float: none;
   color: #FAFAFA;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 95%;
+  font-size: 17px;
 }
 
 .topnav a:hover {
@@ -74,16 +48,17 @@ header {
   font-weight: bold;
 }
 
-.topnav-right {
-  float: right;
-}
-
 i {
    color: #FAFAFA;
 }
 
 footer {
-   text-align: center;
-   font-size: 85%;
+   background-color: #0A0A0A;
    width: 100%;
+   text-align: center;
+}
+
+footer p {
+   color: #FAFAFA;
+   font-size: 70%;
 }
