@@ -3,6 +3,10 @@ Name: Jeff Wu
 Date created: 7/15/19
 Most recent revision: 7/24/20
 */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;800&display=swap');
+body {
+   font-family: 'Assistant', sans-serif;
+}
 
 header {
    color: #0A0A0A;
@@ -61,4 +65,12 @@ footer {
 footer p {
    color: #FAFAFA;
    font-size: 70%;
+}
+
+a {
+   color: #BC2410;
+}
+
+a:hover {
+   color: #BC2410;
 }
