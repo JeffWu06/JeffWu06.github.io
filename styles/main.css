@@ -4,8 +4,14 @@ Date created: 7/15/19
 Most recent revision: 7/24/20
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html {
+   position: relative;
+   min-height: 100%;
+}
+
 body {
    font-family: 'Roboto', sans-serif;
+   margin: 80px 0px 80px 0px;
 }
 
 header {
@@ -14,21 +20,28 @@ header {
    margin-top: 2rem;
 }
 
+nav {
+}
+
 .index-content{
    text-align: center;
    margin: 2rem 0rem 2rem 0rem;
 }
 
-.topnav{
+.topnav {
    align: center;
    overflow: hidden;
    background-color: #0A0A0A;
-   padding: 14px 16px 14px 0px;
+   padding: 14px 0px 14px 0px;
    font-size: 0;
+   width:100%;
+   position:fixed;
+   top: 0;
+   left: 0px;
 }
 
 .bottomnav {
-   padding: 8px;
+   padding: 4px 8px 4px 8px;
 }
 
 .topnav a, .bottomnav a {
@@ -58,8 +71,10 @@ i {
 
 footer {
    background-color: #0A0A0A;
-   width: 100%;
+   width:100%;
    text-align: center;
+   position:fixed;
+   bottom: 0;
 }
 
 footer p {
