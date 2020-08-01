@@ -17,10 +17,7 @@ body {
 header {
    color: #0A0A0A;
    text-align: center;
-   margin-top: 2rem;
-}
-
-nav {
+   margin-top: 90px;
 }
 
 .index-content{
@@ -104,7 +101,6 @@ i {
 
 i:hover {
    color: #BC2410;
-   font-size: 115%;
 }
 
 footer {

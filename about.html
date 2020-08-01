@@ -21,12 +21,15 @@
   </head>
 
   <body>
-     <nav class="navbar fixed-top">
+     <nav class="navbar fixed-top navbar-expand-lg">
        <div class="container">
           <div class="navbar-brand">
-             <a href="index.html"><b>JEFF WU</b></a>
+             <a href="index.html" class="active"><b>JEFF WU</b></a>
           </div>
-          <div class="navbar-right">
+          <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainMenu">
              <a href="about.html" class="active">About me</a>
              <a href="projects.html">My projects</a>
              <a href="blog.html">Blog</a>
