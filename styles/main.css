@@ -89,7 +89,7 @@ header {
   font-weight: bold;
 }
 
-#mainMenu a.active, {
+#mainMenu a.active {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
@@ -99,8 +99,9 @@ i {
    color: #FAFAFA;
 }
 
-i:hover {
+i:hover, .btn.btn-link:hover {
    color: #BC2410;
+   font-weight: bolder;
 }
 
 footer {
@@ -116,14 +117,24 @@ footer p {
    font-size: 70%;
 }
 
-a, a:hover {
-   color: #BC2410;
-}
-
-button:hover {
+a, a:hover, button:hover, li, li:hover {
    color: #BC2410;
 }
 
 section {
    padding-bottom: 1rem;
+}
+
+.card-header {
+   background-color: LightGray;
+}
+
+.btn.btn-link {
+   color: #0A0A0A;
+   font-size: 90%;
+}
+
+img {
+   width: 75%;
+   height: 75%;
 }
