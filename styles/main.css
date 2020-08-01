@@ -67,6 +67,7 @@ header {
 
 .navbar-brand a {
    color: #BC2410;
+   padding-left: 14px;
 }
 
 .navbar-brand a:hover {
@@ -117,8 +118,12 @@ footer p {
    font-size: 70%;
 }
 
-a, a:hover, button:hover, li, li:hover {
+a, a:hover, button:hover, li:hover{
    color: #BC2410;
+}
+
+li {
+   cursor: pointer;
 }
 
 section {
@@ -134,7 +139,11 @@ section {
    font-size: 90%;
 }
 
+figure {
+   text-align: center;
+}
+
 img {
-   width: 75%;
-   height: 75%;
+   width: 85%;
+   height: 85%;
 }
