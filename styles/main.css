@@ -40,7 +40,7 @@ nav {
    left: 0px;
 }
 
-.navbar-right {
+#mainMenu {
    align: right;
    overflow: hidden;
    background-color: #0A0A0A;
@@ -68,7 +68,16 @@ nav {
    padding: 4px 8px 4px 8px;
 }
 
-.navbar-right a, .bottomnav a, .navbar-header a {
+.navbar-brand a {
+   color: #BC2410;
+}
+
+.navbar-brand a:hover {
+   color: #FAFAFA;
+   text-decoration: none;
+}
+
+#mainMenu a, .bottomnav a {
   float: none;
   color: #FAFAFA;
   text-align: center;
@@ -77,19 +86,13 @@ nav {
   font-size: 17px;
 }
 
-.navbar-right a:hover {
+#mainMenu a:hover {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
 }
 
-.navbar-right a.active {
-  background-color: #BC2410;
-  color: #0A0A0A;
-  font-weight: bold;
-}
-
-.navbar-header a.active {
+#mainMenu a.active, {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
@@ -97,6 +100,11 @@ nav {
 
 i {
    color: #FAFAFA;
+}
+
+i:hover {
+   color: #BC2410;
+   font-size: 115%;
 }
 
 footer {
@@ -112,7 +120,7 @@ footer p {
    font-size: 70%;
 }
 
-a, a:hover{
+a, a:hover {
    color: #BC2410;
 }
 
