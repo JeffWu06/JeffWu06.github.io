@@ -28,11 +28,11 @@ nav {
    margin: 2rem 0rem 2rem 0rem;
 }
 
-.topnav {
-   align: center;
+.navbar.fixed-top {
+   align: right;
    overflow: hidden;
    background-color: #0A0A0A;
-   padding: 14px 0px 14px 0px;
+   padding: 0px;
    font-size: 0;
    width:100%;
    position:fixed;
@@ -40,11 +40,35 @@ nav {
    left: 0px;
 }
 
+.navbar-right {
+   align: right;
+   overflow: hidden;
+   background-color: #0A0A0A;
+   padding: 14px 0px 14px 0px;
+   font-size: 0;
+   /* width:100%;
+   position:fixed;
+   top: 0;
+   left: 0px; */
+}
+
+.navbar-header {
+   align: left;
+   overflow: hidden;
+   background-color: #0A0A0A;
+   padding: 14px 0px 14px 0px;
+   font-size: 0;
+   /* width:100%;
+   position:fixed;
+   top: 0;
+   left: 0px; */
+}
+
 .bottomnav {
    padding: 4px 8px 4px 8px;
 }
 
-.topnav a, .bottomnav a {
+.navbar-right a, .bottomnav a, .navbar-header a {
   float: none;
   color: #FAFAFA;
   text-align: center;
@@ -53,13 +77,19 @@ nav {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.navbar-right a:hover {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
 }
 
-.topnav a.active {
+.navbar-right a.active {
+  background-color: #BC2410;
+  color: #0A0A0A;
+  font-weight: bold;
+}
+
+.navbar-header a.active {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
