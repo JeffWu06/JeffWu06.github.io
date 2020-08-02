@@ -126,6 +126,9 @@ li {
    cursor: pointer;
 }
 
+ul {
+   padding-left: 20px;
+}
 section {
    padding-bottom: 1rem;
 }
@@ -144,6 +147,6 @@ figure {
 }
 
 img {
-   width: 85%;
-   height: 85%;
+   width: 90%;
+   height: 90%;
 }
