@@ -29,7 +29,6 @@ header {
    align: right;
    overflow: hidden;
    background-color: #0A0A0A;
-   padding: 0px;
    font-size: 0;
    width:100%;
    position:fixed;
@@ -38,31 +37,10 @@ header {
 }
 
 #mainMenu {
-   align: right;
    overflow: hidden;
    background-color: #0A0A0A;
-   padding: 14px 0px 14px 0px;
+   padding 14px;
    font-size: 0;
-   /* width:100%;
-   position:fixed;
-   top: 0;
-   left: 0px; */
-}
-
-.navbar-header {
-   align: left;
-   overflow: hidden;
-   background-color: #0A0A0A;
-   padding: 14px 0px 14px 0px;
-   font-size: 0;
-   /* width:100%;
-   position:fixed;
-   top: 0;
-   left: 0px; */
-}
-
-.bottomnav {
-   padding: 4px 8px 4px 8px;
 }
 
 .navbar-brand a {
@@ -79,7 +57,8 @@ header {
   float: none;
   color: #FAFAFA;
   text-align: center;
-  padding: 14px 16px;
+  padding-left: 14px;
+  padding-right: 14px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -94,6 +73,10 @@ header {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
+}
+
+.bottomnav {
+   padding: 4px 8px 4px 8px;
 }
 
 i {
