@@ -129,7 +129,44 @@ figure {
    text-align: center;
 }
 
-img {
+img.projects {
    width: 90%;
    height: 90%;
+}
+
+img.headshot {
+  opacity: 1;
+  /* display: block; */
+  width: 45%;
+  /* height: auto; */
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+  /* padding: 250px 0; */
+  position:absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+#headshot:hover .headshot{
+  opacity: 0.3;
+}
+
+#headshot:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /* background-color: #FAFAFA; */
+  color: #BC2410;
+  font-size: 20px;
+  font-weight: bolder;
+  /* padding: 16px 16px; */
 }
