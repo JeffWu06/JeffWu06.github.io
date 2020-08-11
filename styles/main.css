@@ -137,7 +137,7 @@ img.projects {
 img.headshot {
   opacity: 1;
   /* display: block; */
-  width: 45%;
+  width: 50%;
   /* height: auto; */
   transition: .5s ease;
   backface-visibility: hidden;
@@ -149,7 +149,7 @@ img.headshot {
   text-align: center;
   /* padding: 250px 0; */
   position:absolute;
-  top: 75%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
@@ -166,7 +166,7 @@ img.headshot {
 .text {
   /* background-color: #FAFAFA; */
   color: #BC2410;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
   /* padding: 16px 16px; */
 }
