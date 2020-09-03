@@ -34,6 +34,7 @@ header {
    position:fixed;
    top: 0;
    left: 0px;
+   padding: 0px 16px;
 }
 
 #mainMenu {
@@ -41,6 +42,11 @@ header {
    background-color: #0A0A0A;
    padding 14px;
    font-size: 0;
+   margin-bottom: 0px;
+}
+
+.navbar-brand {
+   padding: 0px;
 }
 
 .navbar-brand a {
@@ -53,23 +59,17 @@ header {
    text-decoration: none;
 }
 
-#mainMenu a, .bottomnav a {
+#mainMenu li, .bottomnav a {
   float: none;
   color: #FAFAFA;
-  text-align: center;
-  padding-left: 14px;
-  padding-right: 14px;
+  text-align: left;
+  padding: 14px;
   text-decoration: none;
   font-size: 17px;
+  list-style-type: none;
 }
 
-#mainMenu a:hover {
-  background-color: #BC2410;
-  color: #0A0A0A;
-  font-weight: bold;
-}
-
-#mainMenu a.active {
+#mainMenu li:hover, #mainMenu li.active {
   background-color: #BC2410;
   color: #0A0A0A;
   font-weight: bold;
