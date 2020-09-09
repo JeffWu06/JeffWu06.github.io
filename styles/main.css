@@ -7,7 +7,13 @@ Most recent revision: 9/8/20
 html {
    position: relative;
    height: 100%;
+   width: 100%;
    margin: 0;
+}
+
+body {
+   height: 100%;
+   width: 100%;
 }
 
 .topic h2 {
