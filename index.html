@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Jeff Wu</title>
+    <title>Jeff Wu | Full Stack Java Developer</title>
     <!-- Bootstrap CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <!-- CSS file link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -20,7 +20,7 @@
       }
       h1 {
          color: #0A0A0A;
-         font-size: 400%;
+         font-size: 500%;
          font-weight:600;
       }
     </style>
@@ -30,47 +30,267 @@
      <nav class="navbar fixed-top navbar-expand-md">
        <div class="container">
           <div class="navbar-brand">
-             <a href="https://jeffwu06.github.io/" class="active"><b>JEFF WU</b></a>
+             <a href="#home" class="active"><b>JEFF WU</b></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
              <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
           </button>
           <ul class="collapse navbar-collapse justify-content-end" id="mainMenu">
-             <a href="about.html"><li id="about">About me</li></a>
-             <a href="projects.html"><li id="projects">My projects</li></a>
-             <a href="blog.html"><li id="blog">Blog</li></a>
+             <a href="#portfolio"><li id="portfolioLink">My portfolio</li></a>
+             <a href="#about"><li id="aboutLink">About me</li></a>
+             <a href="#contact"><li id="contactLink">Contact</li></a>
+             <a href="https://jeff-wu-cms.herokuapp.com/" target="_blank"><li id="blog">Blog</li></a>
           </ul>
        </div>
      </nav>
 
-     <div class="container">
-        <header class="jumbotron">
-           <h1>Hi, I'm Jeff!</h1>
-           <h3>I'm a full stack developer.</h3>
-           <h3>Welcome to my site!</h3>
-        </header>
-        <section>
-           <!-- <div class="container" id="headshot"> -->
-           <figure class="container" id="headshot">
-             <a href="about.html">
-             <img class="img-fluid headshot" src="images/headshot-2.jpg" alt="Portrait" />
-             <div class="middle">
-                <div class="text">About me...</div>
-             </div>
-             </a>
-           </figure>
-           <!-- </div> -->
-       </section>
+     <div id="home">
+        <div class="header-pic-text container">
+             <h1><span style="background-color: #FAFAFA; padding: 0px 20px">Hi, I'm Jeff!</span></h1>
+             <h2><span style="background-color: #FAFAFA; padding: 0px 20px">I'm a full stack developer.</h3>
+             <h2><span style="background-color: #FAFAFA; padding: 0px 20px">Welcome to my site!</h3>
+        </div>
      </div>
 
+     <div class="container-fluid topic" id="portfolio">
+      <header>
+          <h2>Portfolio</h2>
+          <hr/>
+      </header>
+      <section class="container">
+          <div class="accordion" id="superHeroSightings">
+            <button class="btn btn-link" type="button" data-toggle="collapse"
+            data-target="#superHeroSightingsBody" aria-expanded="false"
+            aria-controls="collapseOne"><h5>Superhero Sightings</h5></button>
+            <div id="superHeroSightingsBody" class="collapse" aria-labelledby="headingOne" data-parent="#superHeroSightings">
+               <div class="card-body">
+                  <figure>
+                   <img class="img-fluid" src="images/superhero-sightings-pages.gif" alt="Overview of the app" />
+                  </figure>
+                  <p>
+                     Necessitated by increased day-to-day interactions between superheroes and civilians, this application was created for the Hero Education and Relationship Organization (better known as H.E.R.O.), allowing for its users to report and keep track of sightings of said superheroes and villains. The system allows users to add and maintain multiple known superpersons, powers and abilities, hero organizations, and geographic locations, and document sightings of said superpersons.
+                  </p>
+                  <p><u>Demos:</u></p>
+                  <ul>
+                     <li><a data-toggle="collapse" data-target="#addHero">Let's add a new hero.</a></li>
+                     <figure id="addHero" class="collapse">
+                      <img class="img-fluid projects" src="images/superhero-sightings-add-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#editHero">Black Widow needs to be edited.</a></li>
+                     <figure id="editHero" class="collapse">
+                      <img class="img-fluid projects" src="images/superhero-sightings-edit-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#addSighting">That's better. OMG! Is that Supercoder at Starbucks??! We should report a Sighting.</a></li>
+                     <figure id="addSighting" class="collapse">
+                      <img class="img-fluid projects" src="images/superhero-sightings-add-sighting-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#deleteHero">Did you see the news? Turns out Supercoder is just some average dude.</a></li>
+                     <figure id="deleteHero" class="collapse">
+                      <img class="img-fluid projects" src="images/superhero-sightings-delete-hero-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#deleteSighting">Whoops! We have to delete that sighting first before we can delete Supercoder from the system. What are we without good data integrity?</a></li>
+                     <figure id="deleteSighting" class="collapse">
+                      <img class="img-fluid projects" src="images/superhero-sightings-delete-sighting-demo.gif" alt="" />
+                     </figure>
+                  </ul>
+                  <p><a href="https://github.com/JeffWu06/SuperheroSightings" target="_blank">See the Superhero Sightings code...</a></p>
+               </div>
+            </div>
+        </div>
+        <div class="accordion" id="cms">
+           <button class="btn btn-link" type="button" data-toggle="collapse"
+                   data-target="#cmsBody" aria-expanded="false"
+                   aria-controls="collapseOne"><h5>Content Management System</h5></button>
+           <div id="cmsBody" class="collapse" aria-labelledby="headingOne" data-parent="#cms">
+               <div class="card-body">
+                  <figure>
+                    <img class="img-fluid" src="images/cms-main-page.gif" alt="Screenshot of home page" />
+                  </figure>
+                  <p>
+                     Created at the request of (fictional) local business owner, Sarah Dutkiewicz, of (equally fictional) S.D. Industries, this application allows for Ms. Dutkiewicz to create and manage blog posts and other content for her business. By making use of a <a href="https://www.tiny.cloud/" target="_blank">TinyMCE text editor</a>, she need not use any HTML to create rich text content. All blog posts can be given categories, too. Visitors interested in a certain category can search for it from the home page and see all posts of that category. Anyone visting the blog can see what has been posted, but only users added by an administrator can write new content. And with the help of Spring Security, these new posts will only see the light of day if approved by an administrator.
+                  </p>
+                  <p><u>Demos:</u></p>
+                  <ul>
+                     <li><a data-toggle="collapse" data-target="#viewPost">View a post from the homepage.</a></li>
+                     <figure id="viewPost" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-view-post.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#searchPosts">Search for posts by category.</a></li>
+                     <figure id="searchPosts" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-search-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#addPost">Log in as a user and write a new blog post.</a></li>
+                     <figure id="addPost" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-user-add-post-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#approvePost">Log in as an Admin and approve the new post.</a></li>
+                     <figure id="approvePost" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-admin-approve-demo.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#createPage">Create a new static page as an Admin.</a></li>
+                     <figure id="createPage" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-admin-create-page.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#addUser">Add a new user as Admin.</a></li>
+                     <figure id="addUser" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-admin-manage-users.gif" alt="" />
+                     </figure>
+                     <li><a data-toggle="collapse" data-target="#deleteContent">Additional Admin-level content management.</a></li>
+                     <figure id="deleteContent" class="collapse">
+                      <img class="img-fluid projects" src="images/cms-admin-delete-demos.gif" alt="" />
+                     </figure>
+                  </ul>
+                  <p><a href="https://jeff-wu-cms.herokuapp.com/" target="_blank">Check out the CMS deployment...</a></p>
+               </div>
+            </div>
+         </div>
+         <div class="accordion" id="vendingMachine">
+                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                    data-target="#vendingMachineBody" aria-expanded="false"
+                    aria-controls="collapseOne"><h5>Vending Machine</h5></button>
+             <div id="vendingMachineBody" class="collapse" aria-labelledby="headingOne" data-parent="#vendingMachine">
+               <div class="card-body">
+                   <figure>
+                     <img class="img-fluid projects" src="images/vending-machine-main.jpg" alt="Screenshot of home page" />
+                   </figure>
+                   <p>
+                      This application models the interface and processes of a vending machine. Users can "insert" money and select an item for purchase. The system will deplete the purchased item's inventory quantity and calculate and disburse change owed, if any. Users attempting to purchase an out of stock item will be greeted with a message indicating as such, and will be prompted to "insert" a specified amount of money if the item they attempt to purchase is priced at an amount higher than the value of the denomination provided.
+                   </p>
+                   <p><u>Demos:</u></p>
+                   <ul>
+                      <li><a data-toggle="collapse" data-target="#vendItem">Purchasing an in-stock item with proper funds.</a></li>
+                      <figure id="vendItem" class="collapse">
+                       <img class="img-fluid projects" src="images/vending-machine-vend-item.gif" alt="" />
+                      </figure>
+                      <li><a data-toggle="collapse" data-target="#isf">Purchasing an item with insufficient funds provided.</a></li>
+                      <figure id="isf" class="collapse">
+                       <img class="img-fluid projects" src="images/vending-machine-isf.gif" alt="" />
+                      </figure>
+                      <li><a data-toggle="collapse" data-target="#soldOut">Purchasing an item that is sold out.</a></li>
+                      <figure id="soldOut" class="collapse">
+                       <img class="img-fluid projects" src="images/vending-machine-soldout.gif" alt="" />
+                      </figure>
+                   </ul>
+                   <p><a href="https://github.com/JeffWu06/VendingMachineSpringMVC" target="_blank">See the Vending Machine code...</a></p>
+               </div>
+             </div>
+          </div>
+         <div class="accordion" id="salesOrders">
+                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                    data-target="#salesOrderBody" aria-expanded="false"
+                    aria-controls="collapseOne"><h5>Flooring company sales order system</h5></button>
+             <div id="salesOrderBody" class="collapse" aria-labelledby="headingOne" data-parent="#salesOrders">
+               <div class="card-body">
+                   <figure>
+                     <img class="img-fluid projects" src="images/flooring-mastery-main.gif" alt="Screenshot of home page" />
+                   </figure>
+                   <p>
+                      Designed for a fictional flooring wholesaler, this console-based application allows users to manage sales orders for flooring products. On startup, the program will load existing orders from a file. To enter an order, users need only provide some customer information, the purchased product name and quantity, and state location, and the system will automatically calculate the total cost for the product and any applicable installation costs and sales tax. Users can also view, edit, and delete existing orders. Upon exiting the program (or if specifically selected), changes made during that session will be written to the data files. The program also features a training mode, where new users can add and modify existing orders without worrying about altering the live data.
+                   </p>
+                   <p><u>Demos:</u></p>
+                   <ul>
+                      <li><a data-toggle="collapse" data-target="#viewOrders">View all existing orders for a certain date.</a></li>
+                      <figure id="viewOrders" class="collapse">
+                        <img class="img-fluid projects" src="images/flooring-mastery-view-orders.gif" alt="" />
+                      </figure>
+                      <li><a data-toggle="collapse" data-target="#addOrder">Add a new order.</a></li>
+                      <figure id="addOrder" class="collapse">
+                        <img class="img-fluid projects" src="images/flooring-mastery-add-order.gif" alt="" />
+                      </figure>
+                      <li><a data-toggle="collapse" data-target="#editOrder">Edit an existing order.</a></li>
+                      <figure id="editOrder" class="collapse">
+                        <img class="img-fluid projects" src="images/flooring-mastery-edit-order.gif" alt="" />
+                      </figure>
+                      <li><a data-toggle="collapse" data-target="#deleteOrder">Delete an existing order.</a></li>
+                      <figure id="deleteOrder" class="collapse">
+                        <img class="img-fluid projects" src="images/flooring-mastery-delete-order.gif" alt="" />
+                      </figure>
+                   </ul>
+                   <p><a href="https://github.com/JeffWu06/FlooringSalesOrders" target="_blank">See the Flooring Order management code...</a></p>
+               </div>
+             </div>
+         </div>
+         <div class="accordion" id="rps">
+                   <button class="btn btn-link" type="button" data-toggle="collapse"
+                    data-target="#rpsBody" aria-expanded="false"
+                    aria-controls="collapseOne"><h5>RoShamBo!</h5></button>
+             <div id="rpsBody" class="collapse" aria-labelledby="headingOne" data-parent="#rps">
+               <div class="card-body">
+                   <figure>
+                     <img class="img-fluid projects" src="images/rps-demo.jpg" alt="Screenshot of home page" />
+                   </figure>
+                   <p>
+                      Who doesn't love a classic game of RoShamBo (a.k.a. Rock Paper Scissors, RPS, or <em>shoushiling</em> depending on who you ask)? This was my first major coding challenge from The Guild. The game allows the user to specify how many rounds they would like to play against the computer, from 1 to 10. Whoever wins the most number of rounds is declared the winner.
+                   </p>
+                   <p><u>Demo:</u></p>
+                   <ul>
+                      <li><a data-toggle="collapse" data-target="#startGame">Let's challenge the computer, say, best of three.</a></li>
+                      <figure id="startGame" class="collapse">
+                        <img class="img-fluid projects" src="images/rps-main.gif" alt="" />
+                      </figure>
+                      <li><a data-toggle="collapse" data-target="#playRps">We'll get 'em with the classic Avalanche strategy. Huzzah! Never fails!</a></li>
+                      <figure id="playRps" class="collapse">
+                        <img class="img-fluid projects" src="images/rps-play.gif" alt="" />
+                      </figure>
+                   </ul>
+                   <p><a href="https://github.com/JeffWu06/RockPaperScissors" target="_blank">See the RPS code...</a></p>
+               </div>
+             </div>
+         </div>
+      </section>
+  </div>
+
+     <div class="container-fluid topic" id="about">
+        <header>
+           <h2>About me</h2>
+           <hr/>
+        </header>
+        <div class="container">
+        <div class="row">
+           <div class="col-md-8">
+             <p>
+                My name is Jeff Wu, and I'm a full stack developer.
+             </p>
+             <p>
+                I went to <span style="font-weight:bold; color: #BC2410"><em>THE</em></span> Ohio State Univerity where I studied business and accounting, and eventually earned my CPA.              </p>
+             <p>
+                My love of programming started when I learned how to use macros to prepare accounting reports in Excel. Seeing what used to take me hours to do be done with the single click of a button made my jaw drop. "Has my computer always been able to do stuff like this?" I asked myself. I began researching coding, eventually enrolling in online classes and building small projects on my own in Java. Craving a little more structure, I enrolled in CSULB's Full Stack Development certificate program. For the better part of a year, it was debits and credits by day, coding by night (later, diaper-changings and bottle feedings worked their way into the rotation), my fascination growing with each carriage return.
+             <p>
+                Fast-forward to summer 2020, <b>I am now a full stack developer</b> with a variety of <a href="#portfolio" target="_blank">completed projects</a> to my name, looking to find a home where I can put my skills to use professionally. It has been an incredible journey so far, and hopefully I am still just beginning.
+             </p>
+             <p>
+                So please take a <a href="files/Jeff Wu - Java dev.pdf" target="blank" download>resume</a>, send me an <a href="mailto:weff.ju@gmail.com">email</a>, and take a look at what I have been <a href="https://github.com/JeffWu06">coding lately</a>, and <span style="font-weight:bold">let me know how I can help you!</span>
+             </p>
+          </div>
+          <div class="col-md-4">
+             <figure><img class="headshot" src="images/headshot-2.jpg" alt="Portrait" /></figure>
+          </div>
+       </div>
+      </div>
+   </div>
+
+   <div class="container-fluid topic" id="contact">
+      <header>
+         <h2>Contact</h2>
+         <hr/>
+      </header>
+      <div class="social-links container">
+         <a href="mailto:weff.ju@gmail.com"><i class="fa fa-envelope"></i></a>
+         <a href="https://www.linkedin.com/in/jeffwujavaccountant/" target="_blank"><i class="fa fa-linkedin"></i></a>
+         <a href="https://github.com/JeffWu06" target="_blank"><i class="fa fa-github"></i></a>
+         <!-- <a href="https://www.hackerrank.com/weff_ju" target="_blank"><i class="fa fa-code"></i></a> -->
+         <a href="files/Jeff Wu - Java dev.pdf" target="blank" download><i class="fa fa-file"></i></a>
+      </div>
+   </div>
+
      <footer>
-        <div class="bottomnav">
+        <!-- <div class="bottomnav">
            <a href="files/Jeff Wu - Java dev.pdf" target="blank" download><i class="fa fa-file"></i></a>
            <a href="mailto:weff.ju@gmail.com"><i class="fa fa-envelope"></i></a>
            <a href="https://www.linkedin.com/in/jeffwujavaccountant/" target="_blank"><i class="fa fa-linkedin"></i></a>
            <a href="https://github.com/JeffWu06" target="_blank"><i class="fa fa-github"></i></a>
-           <a href="https://www.hackerrank.com/weff_ju" target="_blank"><i class="fa fa-header"></i><i class="fa fa-code"></i></a>
-        </div>
+           <a href="https://www.hackerrank.com/weff_ju" target="_blank"><i class="fa fa-code"></i></a>
+        </div> -->
         <p>&copy; 2020 Jeff Wu. All rights reserved.</p>
      </footer>
 
@@ -78,5 +298,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 </html>

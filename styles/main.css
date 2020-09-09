@@ -1,23 +1,57 @@
 /*
 Name: Jeff Wu
 Date created: 7/15/19
-Most recent revision: 7/24/20
+Most recent revision: 9/8/20
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 html {
    position: relative;
-   min-height: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+.topic h2 {
+   font-weight: bolder;
+   font-size: 275%;
+}
+
+#home {
+   /* position: relative;
+   width: 100%;*/
+   text-align: center;
+   background-image: url("../images/keyboard.jpg");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#about {
+   background-color: #dedce0;
+}
+
+.btn.btn-link {
+   background-color: #dedce0;
+   margin: 0px 30px 20px 30px;
+}
+
+.header-pic-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #0A0A0A;
 }
 
 body {
+   height: 100%;
+   margin: 0;
    font-family: 'Roboto', sans-serif;
-   margin: 80px 0px 80px 0px;
 }
 
 header {
    color: #0A0A0A;
    text-align: center;
-   margin-top: 90px;
 }
 
 .index-content{
@@ -79,11 +113,22 @@ header {
    padding: 4px 8px 4px 8px;
 }
 
-i {
+.social-links {
+   text-align: center;
+   padding-top: 30px;
+}
+
+.social-links i {
+   color: #0A0A0A;
+   padding: 0px 20px;
+   font-size: 300%;
+}
+
+.navbar-toggler i {
    color: #FAFAFA;
 }
 
-i:hover, .btn.btn-link:hover {
+.bottomnav i:hover, .btn.btn-link:hover {
    color: #BC2410;
    font-weight: bolder;
 }
@@ -99,10 +144,24 @@ footer {
 footer p {
    color: #FAFAFA;
    font-size: 70%;
+   margin-bottom: 0px;
 }
 
 a, a:hover, button:hover, li:hover{
    color: #BC2410;
+}
+
+#about {
+   padding-top: 80px;
+}
+
+.topic {
+   padding-top: 80px;
+   min-height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
 }
 
 li {
@@ -112,6 +171,7 @@ li {
 ul {
    padding-left: 20px;
 }
+
 section {
    padding-bottom: 1rem;
 }
@@ -137,10 +197,11 @@ img.projects {
 img.headshot {
   opacity: 1;
   /* display: block; */
-  width: 50%;
+  width: 90%;
   /* height: auto; */
   transition: .5s ease;
   backface-visibility: hidden;
+  padding-bottom: 80px;
 }
 
 .middle {
