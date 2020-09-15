@@ -251,21 +251,23 @@ img.headshot {
 }
 
 .project-column {
-   float: left;
+   /* float: left; */
    width: 48%;
-   display: table-cell;
+   /* display: table-cell; */
    background-color: #dedce0;
    margin: 0px 10px 10px 10px;
+   /* margin: auto; */
    border-style: solid;
    border-color: #dedce0;
    position: relative;
+   text-align: center;
 }
 
 .portfolio {
    display:table;
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 1200px) {
    .project-column {
       width: 100%;
    }
