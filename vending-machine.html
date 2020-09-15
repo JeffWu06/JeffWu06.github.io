@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Jeff Wu</title>
+    <!-- Bootstrap CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <style>
+       h1 {
+         color: #0A0A0A;
+         font-weight:bold;
+         font-size: 300%;
+       }
+    </style>
+  </head>
+
+  <body>
+     <nav class="navbar fixed-top navbar-expand-md">
+       <div class="container">
+          <div class="navbar-brand">
+             <a href="https://jeffwu06.github.io/" class="active"><b>JEFF WU</b></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
+             <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+          </button>
+          <ul class="collapse navbar-collapse justify-content-end" id="mainMenu">
+             <a href="https://jeffwu06.github.io/#portfolio"><li>My portfolio</li></a>
+             <a href="https://jeffwu06.github.io/#about"><li>About me</li></a>
+             <a href="https://jeffwu06.github.io/#contact"><li>Contact</li></a>
+             <a href="https://jeff-wu-cms.herokuapp.com/" target="_blank"><li>Blog</li></a>
+          </ul>
+       </div>
+     </nav>
+
+     <div class="container project-page">
+        <header>
+           <h2>Vending Machine</h2>
+           <hr/>
+        </header>
+        <section>
+           <p><a href="https://github.com/JeffWu06/VendingMachineSpringMVC" target="_blank">See the Vending Machine code...</a></p>
+           <p>
+              This application models the interface and processes of a vending machine. Users can "insert" money and select an item for purchase. The system will deplete the purchased item's inventory quantity and calculate and disburse change owed, if any. Users attempting to purchase an out of stock item will be greeted with a message indicating as such, and will be prompted to "insert" a specified amount of money if the item they attempt to purchase is priced at an amount higher than the value of the denomination provided.
+           </p>
+           <p>Technologies used: MySQL, HTML, CSS, JSPs using EL and JSTL, servlets, Java, Spring MVC, TDD using JUnit.</p>
+           <p><u>Demos:</u></p>
+           <ul>
+              <li><a data-toggle="collapse" data-target="#vendItem">Purchasing an in-stock item with proper funds.</a></li>
+              <figure id="vendItem" class="collapse">
+               <img class="img-fluid projects" src="images/vending-machine-vend-item.gif" alt="" />
+              </figure>
+              <li><a data-toggle="collapse" data-target="#isf">Purchasing an item with insufficient funds provided.</a></li>
+              <figure id="isf" class="collapse">
+               <img class="img-fluid projects" src="images/vending-machine-isf.gif" alt="" />
+              </figure>
+              <li><a data-toggle="collapse" data-target="#soldOut">Purchasing an item that is sold out.</a></li>
+              <figure id="soldOut" class="collapse">
+               <img class="img-fluid projects" src="images/vending-machine-soldout.gif" alt="" />
+              </figure>
+           </ul>
+       </section>
+   </div>
+   <footer class="bottom-fixed">
+      <!-- <div class="bottomnav">
+         <a href="files/Jeff Wu - Java dev.pdf" target="blank" download><i class="fa fa-file"></i></a>
+         <a href="mailto:weff.ju@gmail.com"><i class="fa fa-envelope"></i></a>
+         <a href="https://www.linkedin.com/in/jeffwujavaccountant/" target="_blank"><i class="fa fa-linkedin"></i></a>
+         <a href="https://github.com/JeffWu06" target="_blank"><i class="fa fa-github"></i></a>
+         <a href="https://www.hackerrank.com/weff_ju" target="_blank"><i class="fa fa-header"></i><i class="fa fa-code"></i></a>
+      </div> -->
+      <p>&copy; 2020 Jeff Wu. All rights reserved.</p>
+   </footer>
+
+  <!-- Bootstrap CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
